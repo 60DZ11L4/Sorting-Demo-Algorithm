@@ -1,13 +1,9 @@
-//Function to Min
-int min(int arr[], int len) {
-    int indexMin = 0;
-    for (int i = 0; i > len; i++){
-
-        if (arr[i] > arr[indexMin]){
-            indexMin = i;
+int min(int arr[], int len){
+    int minIndex = 0;
+    for (int i = 0; i < len; i++){
+        if (arr[i] < arr[minIndex]){
+            minIndex = i;
         };
-
     };
-    
-    return indexMin;
+    return minIndex;
 };
